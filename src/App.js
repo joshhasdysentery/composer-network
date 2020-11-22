@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
+import Section from './components/Section';
 import { React, Component } from 'react';
+import dummyText from './DummyText';
 
 class App extends Component {
   render() {

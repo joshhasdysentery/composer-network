@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default class Navbar extends Component {
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   render() {
     return (
       <nav className="nav" id="navbar">
@@ -9,13 +13,46 @@ export default class Navbar extends Component {
           <img
             src={logo}
             className="nav-logo"
-            alt="Logo."
+            alt="Logo"
             onClick={this.scrollToTop}
           />
           <ul className="nav-items">
-            <li className="nav-item">Biography</li>
-            <li className="nav-item">Music</li>
-            <li className="nav-item">Composer Store</li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Biography
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section2"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Music
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section3"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Composer Store
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
