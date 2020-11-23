@@ -1,48 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import Section from './components/Section';
 import { React, Component } from 'react';
-import dummyText from './DummyText';
+import { makeStyles } from '@material-ui/core/styles';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Navbar />
-        <Section
-          title="Section 1"
-          subtitle={dummyText}
-          dark={true}
-          id="section1"
-        />
-        <Section
-          title="Section 2"
-          subtitle={dummyText}
-          dark={false}
-          id="section2"
-        />
-        <Section
-          title="Section 3"
-          subtitle={dummyText}
-          dark={true}
-          id="section3"
-        />
-        <Section
-          title="Section 4"
-          subtitle={dummyText}
-          dark={false}
-          id="section4"
-        />
-        <Section
-          title="Section 5"
-          subtitle={dummyText}
-          dark={true}
-          id="section5"
-        />
-      </div>
-    );
-  }
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minHeight: '100vh',
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg.jpg'})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  },
+}));
+
+export default function App() {
+  const classes = useStyles();
+  return <div className={classes.root}></div>;
 }
-
-export default App;
