@@ -5,6 +5,11 @@ import SortIcon from '@material-ui/icons/Sort';
 const useStyles = makeStyles((theme) => ({
   appbar: {
     background: 'none',
+    fontFamily: 'Merriweather',
+  },
+  appbarWrapper: {
+    width: '80%',
+    margin: '0 auto',
   },
   appbarTitle: {
     flexGrow: '1',
@@ -20,10 +25,12 @@ export default function Header() {
   return (
     <div>
       <AppBar className={classes.appbar}>
-        <Toolbar>
-          <h1 className={classes.appbarTitle}>Composer Network</h1>
+        <Toolbar className={classes.appbarWrapper}>
+          <h1 className={classes.appbarTitle}>
+            Composer<span className={classes.colorText}>Network</span>
+          </h1>
           <IconButton>
-            <SortIcon />
+            <SortIcon className={classes.icon} />
           </IconButton>
         </Toolbar>
       </AppBar>
