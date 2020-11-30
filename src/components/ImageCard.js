@@ -10,42 +10,52 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 600,
+    background: 'rgba(0,0,0,0.5)',
   },
   media: {
-    height: 140,
+    height: 440,
+  },
+  title: {
+    fontFamily: 'Merriweather',
+    fontWeight: 'bold',
+    fontSize: '2rem',
+    color: '#fff',
+  },
+  desc: {
+    fontFamily: 'Merriweather',
+    fontSize: '1.1rem',
+    color: '#fff',
   },
 });
 
-export default function ImageCard() {
+export default function ImageCard({ composer }) {
   const classes = useStyles();
-
   return (
     <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
+      <CardMedia
+        className={classes.media}
+        image={composer.imageUrl}
+        title="Contemplative Reptile"
+      />
+      <CardContent>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="h2"
+          className={classes.title}
+        >
+          {composer.title}
+        </Typography>
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          component="p"
+          className={classes.desc}
+        >
+          {composer.desc}
+        </Typography>
+      </CardContent>
     </Card>
   );
 }

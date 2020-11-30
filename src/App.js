@@ -2,6 +2,7 @@ import { React, Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Header from './components/Header';
+import ComposerChoices from './components/ComposerChoices';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +19,7 @@ export default function App() {
     <div className={classes.root}>
       <CssBaseline />
       <Header />
+      <ComposerChoices />
     </div>
   );
 }
