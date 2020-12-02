@@ -48,7 +48,7 @@ export default function Header() {
     setChecked(true);
   }, []);
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="header">
       <AppBar className={classes.appbar}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>

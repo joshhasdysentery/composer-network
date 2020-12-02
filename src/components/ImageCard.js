@@ -12,6 +12,7 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 600,
     background: 'rgba(0,0,0,0.5)',
+    margin: '20px',
   },
   media: {
     height: 440,
@@ -53,7 +54,7 @@ export default function ImageCard({ composer }) {
           component="p"
           className={classes.desc}
         >
-          {composer.desc}
+          {composer.description}
         </Typography>
       </CardContent>
     </Card>
