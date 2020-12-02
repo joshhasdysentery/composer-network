@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Header from './components/Header';
 import ComposerChoices from './components/ComposerChoices';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from '../src/components/layout';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,10 +18,14 @@ const useStyles = makeStyles((theme) => ({
 export default function App() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <Header />
-      <ComposerChoices />
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <div className={classes.root}>
+          <CssBaseline />
+          <Header />
+          <ComposerChoices />
+        </div>
+      </Layout>
+    </BrowserRouter>
   );
 }
