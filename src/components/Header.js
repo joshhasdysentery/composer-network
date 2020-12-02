@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   goDown: {
     color: '#fff',
-    fontSize: '15rem',
+    fontSize: '4rem',
   },
 }));
 
@@ -71,7 +71,7 @@ export default function Header() {
             Composer <span className={classes.colorText}>Network</span>
           </h1>
           <IconButton>
-            <ExpandMoreIcon classes={classes.goDown} />
+            <ExpandMoreIcon className={classes.goDown} />
           </IconButton>
         </div>
       </Collapse>

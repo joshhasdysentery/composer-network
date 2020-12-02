@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
+import Collapse from '@material-ui/core/Collapse';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -30,33 +31,35 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImageCard({ composer }) {
+export default function ImageCard({ composer, checked }) {
   const classes = useStyles();
   return (
-    <Card className={classes.root}>
-      <CardMedia
-        className={classes.media}
-        image={composer.imageUrl}
-        title="Contemplative Reptile"
-      />
-      <CardContent>
-        <Typography
-          gutterBottom
-          variant="h5"
-          component="h2"
-          className={classes.title}
-        >
-          {composer.title}
-        </Typography>
-        <Typography
-          variant="body2"
-          color="textSecondary"
-          component="p"
-          className={classes.desc}
-        >
-          {composer.description}
-        </Typography>
-      </CardContent>
-    </Card>
+    <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
+      <Card className={classes.root}>
+        <CardMedia
+          className={classes.media}
+          image={composer.imageUrl}
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="h2"
+            className={classes.title}
+          >
+            {composer.title}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            className={classes.desc}
+          >
+            {composer.description}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Collapse>
   );
 }
