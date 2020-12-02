@@ -18,7 +18,7 @@ export default function () {
   const classes = useStyles();
   const checked = useWindowPosition('header');
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="composer-choice">
       <ImageCard composer={composers[0]} checked={checked} />
       <ImageCard composer={composers[1]} checked={checked} />
     </div>
