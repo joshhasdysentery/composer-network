@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Header from './components/Header';
 import ComposerChoices from './components/ComposerChoices';
-import { BrowserRouter } from 'react-router-dom';
-import Layout from '../src/components/layout';
+import StorePage from './components/StorePage';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,14 +18,13 @@ const useStyles = makeStyles((theme) => ({
 export default function App() {
   const classes = useStyles();
   return (
-    <BrowserRouter>
-      <Layout>
-        <div className={classes.root}>
-          <CssBaseline />
-          <Header />
-          <ComposerChoices />
-        </div>
-      </Layout>
-    </BrowserRouter>
+    <Router>
+      <div className={classes.root}>
+        <CssBaseline />
+        <Header />
+        <Route path="/composers" component={ComposerChoices} />
+        <Route path="/store" component={StorePage} />
+      </div>
+    </Router>
   );
 }

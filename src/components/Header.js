@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import StoreIcon from '@material-ui/icons/Store';
 import { Link as Scroll } from 'react-scroll';
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,7 +57,7 @@ export default function Header() {
             Composer<span className={classes.colorText}>Network</span>
           </h1>
           <IconButton>
-            <SortIcon className={classes.icon} />
+            <StoreIcon className={classes.icon} />
           </IconButton>
         </Toolbar>
       </AppBar>
