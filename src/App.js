@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Header from './components/Header';
 import ComposerChoices from './components/ComposerChoices';
-import StorePage from './components/StorePage';
+import Store from './components/Store';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -22,8 +22,10 @@ export default function App() {
       <div className={classes.root}>
         <CssBaseline />
         <Header />
-        <Route path="/composers" component={ComposerChoices} />
-        <Route path="/store" component={StorePage} />
+        <Switch>
+          <Route path="/" exact component={ComposerChoices} />
+          <Route path="/store" component={Store} />
+        </Switch>
       </div>
     </Router>
   );
