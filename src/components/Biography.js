@@ -1,8 +1,8 @@
-import './App.css';
-import Navbar from './components/BioNavbar';
-import Section from './components/Section';
+import Navbar from './BioNavbar';
+import Section from './Section';
 import { React, Component } from 'react';
-import dummyText from './DummyText';
+import dummyText from '../DummyText';
+import { Link } from 'react-router-dom';
 
 class Biography extends Component {
   render() {

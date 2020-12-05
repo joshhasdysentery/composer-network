@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -35,31 +36,33 @@ export default function ImageCard({ composer, checked }) {
   const classes = useStyles();
   return (
     <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
-      <Card className={classes.root}>
-        <CardMedia
-          className={classes.media}
-          image={composer.imageUrl}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="h2"
-            className={classes.title}
-          >
-            {composer.title}
-          </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            component="p"
-            className={classes.desc}
-          >
-            {composer.description}
-          </Typography>
-        </CardContent>
-      </Card>
+      <Link>
+        <Card className={classes.root}>
+          <CardMedia
+            className={classes.media}
+            image={composer.imageUrl}
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              className={classes.title}
+            >
+              {composer.title}
+            </Typography>
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              className={classes.desc}
+            >
+              {composer.description}
+            </Typography>
+          </CardContent>
+        </Card>
+      </Link>
     </Collapse>
   );
 }

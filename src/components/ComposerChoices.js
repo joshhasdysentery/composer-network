@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ImageCard from './ImageCard';
 import composers from '../static/composers';
 import useWindowPosition from '../hook/useWindowPosition';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +23,9 @@ export default function () {
   const checked = useWindowPosition('header');
   return (
     <div className={classes.root} id="composer-choice">
-      <ImageCard composer={composers[0]} checked={checked} />
+      <Link to="/shostakovich">
+        <ImageCard composer={composers[0]} checked={checked} />
+      </Link>
       <ImageCard composer={composers[1]} checked={checked} />
     </div>
   );

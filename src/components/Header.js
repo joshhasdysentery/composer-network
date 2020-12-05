@@ -53,9 +53,11 @@ export default function Header() {
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar}>
         <Toolbar className={classes.appbarWrapper}>
-          <h1 className={classes.appbarTitle}>
-            Composer<span className={classes.colorText}>Network</span>
-          </h1>
+          <Link to="/">
+            <h1 className={classes.appbarTitle}>
+              Composer<span className={classes.colorText}>Network</span>
+            </h1>
+          </Link>
           <IconButton>
             <Link to="/store">
               <StoreIcon className={classes.icon} />
