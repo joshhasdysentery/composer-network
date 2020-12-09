@@ -36,33 +36,31 @@ export default function ImageCard({ composer, checked }) {
   const classes = useStyles();
   return (
     <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
-      <Link>
-        <Card className={classes.root}>
-          <CardMedia
-            className={classes.media}
-            image={composer.imageUrl}
-            title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="h2"
-              className={classes.title}
-            >
-              {composer.title}
-            </Typography>
-            <Typography
-              variant="body2"
-              color="textSecondary"
-              component="p"
-              className={classes.desc}
-            >
-              {composer.description}
-            </Typography>
-          </CardContent>
-        </Card>
-      </Link>
+      <Card className={classes.root}>
+        <CardMedia
+          className={classes.media}
+          image={composer.imageUrl}
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="h2"
+            className={classes.title}
+          >
+            {composer.title}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            className={classes.desc}
+          >
+            {composer.description}
+          </Typography>
+        </CardContent>
+      </Card>
     </Collapse>
   );
 }
