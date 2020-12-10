@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import './Footer.css';
-import { Domain } from 'material-ui-icons';
 
 function Footer() {
   return (
