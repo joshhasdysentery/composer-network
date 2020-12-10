@@ -1,6 +1,7 @@
 import { React, Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, CssBaseline, SvgIcon } from '@material-ui/core';
+import { Card, CssBaseline } from '@material-ui/core';
+import { SvgIcon } from '@material-ui/icons';
 import Header from './components/Header';
 import ComposerChoices from './components/ComposerChoices';
 import Store from './components/Store';
