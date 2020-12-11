@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Card, CssBaseline } from '@material-ui/core';
 import Header from './components/Header';
 import ComposerChoices from './components/ComposerChoices';
-import Store from './components/Store';
+import Store from './components/pages/Store';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Biography from './components/Biography';
 import Footer from '../src/components/Footer';
