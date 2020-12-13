@@ -5,7 +5,7 @@ import Header from './components/Header';
 import ComposerChoices from './components/pages/ComposerChoices';
 import Store from './components/pages/Store';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Biography from './components/pages/shostaBiography';
+import shostaBiography from './components/pages/shostaBiography';
 import Footer from '../src/components/Footer';
 import Home from './components/pages/Home';
 
@@ -27,7 +27,9 @@ export default function App() {
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/composers" exact component={ComposerChoices} />
           <Route path="/store" component={Store} />
+          <Route path="/shostakovich" component={shostaBiography} />
         </Switch>
         <Footer />
       </div>
