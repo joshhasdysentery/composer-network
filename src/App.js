@@ -2,10 +2,10 @@ import { React, Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Card, CssBaseline } from '@material-ui/core';
 import Header from './components/Header';
-import ComposerChoices from './components/ComposerChoices';
+import ComposerChoices from './components/pages/ComposerChoices';
 import Store from './components/pages/Store';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Biography from './components/Biography';
+import Biography from './components/pages/shostaBiography';
 import Footer from '../src/components/Footer';
 import Home from './components/pages/Home';
 
@@ -28,7 +28,6 @@ export default function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/store" component={Store} />
-          <Route path="/shostakovich" component={Biography} />
         </Switch>
         <Footer />
       </div>

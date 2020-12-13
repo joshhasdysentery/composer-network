@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import ImageCard from './ImageCard';
-import composers from '../static/composers';
-import useWindowPosition from '../hook/useWindowPosition';
+import ImageCard from '../ImageCard';
+import composers from '../../static/composers';
+import useWindowPosition from '../../hook/useWindowPosition';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
