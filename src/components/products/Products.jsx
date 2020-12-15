@@ -32,7 +32,6 @@ const Products = () => {
           </Grid>
         ))}
       </Grid>
-      <StoreNavbar />
     </main>
   );
 };
