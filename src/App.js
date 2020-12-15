@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import shostaBiography from './components/pages/shostaBiography';
 import Footer from '../src/components/Footer';
 import Home from './components/pages/Home';
+import Products from './components/products/Products';
 
 const useStyles = makeStyles((theme) => ({
   root: {
