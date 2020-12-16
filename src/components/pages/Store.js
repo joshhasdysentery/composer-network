@@ -19,11 +19,10 @@ const Store = () => {
     fetchProducts();
   }, []);
 
-  console.log(products);
   return (
     <div>
       <StoreNavbar />
-      <Products />
+      <Products products={products} />
     </div>
   );
 };

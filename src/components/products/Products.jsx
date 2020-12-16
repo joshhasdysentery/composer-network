@@ -5,22 +5,7 @@ import Product from '../product/Product';
 import useStyles from './styles';
 import StoreNavbar from '../Navbar/StoreNavbar';
 
-const products = [
-  {
-    id: 1,
-    name: 'Valve Oil',
-    description: 'make your instrument unstuck',
-    price: '$3',
-  },
-  {
-    id: 2,
-    name: 'Conducting Baton',
-    description: 'you use this everyday, never hurts for a spare',
-    price: '$50',
-  },
-];
-
-const Products = () => {
+const Products = ({ products }) => {
   const classes = useStyles();
   return (
     <main className={classes.content}>
