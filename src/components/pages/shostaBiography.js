@@ -3,6 +3,8 @@ import Section from '../Section';
 import { React, Component } from 'react';
 import dummyText from '../../DummyText';
 import { Link } from 'react-router-dom';
+import ReactPlayer from 'react-player';
+import '../../components/Video.css';
 class Biography extends Component {
   render() {
     return (
@@ -37,10 +39,18 @@ class Biography extends Component {
         />
         <Section
           title="Notable Works"
-          subtitle={''}
+          subtitle={
+            "One of Dmitri's most sarcastic piece's is suprisingly his ninth Symphony, a piece typically associated with loud and brave notes. If you take a listen, you can notice that the first movement especially, is riddled with jokes and things only composers would get, all in order to mock Stalin. "
+          }
           dark={true}
           id="section4"
         />
+        <div className="Video">
+          <ReactPlayer
+            controls
+            url="https://www.youtube.com/watch?v=qynu8yNiTrY&t=268s"
+          />
+        </div>
       </div>
     );
   }
