@@ -2,7 +2,7 @@ const composers = [
   {
     title: 'Dmitri Shostakovich',
     description: "A composer who's creativity shined under an oppressive eye",
-    //imageUrl: process.env.PUBLIC_URL + '/assets/island1.jpg',
+    imageUrl: process.env.PUBLIC_URL + '/assets/shostakovich.jpg',
     time: 1500,
   },
   {
