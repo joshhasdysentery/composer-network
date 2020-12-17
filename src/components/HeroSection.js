@@ -23,10 +23,30 @@ function HeroSection() {
           <Button
             renderAs="button"
             className="btns"
-            buttonStyle="btn--primary"
+            buttonStyle="btn--outline"
             buttonSize="btn--large"
           >
             Store
+          </Button>
+        </Link>
+        <Link to="/about">
+          <Button
+            renderAs="button"
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
+            About Us
+          </Button>
+        </Link>
+        <Link to="/resources">
+          <Button
+            renderAs="button"
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
+            Resources
           </Button>
         </Link>
       </div>

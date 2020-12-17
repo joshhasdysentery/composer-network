@@ -8,7 +8,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import shostaBiography from './components/pages/shostaBiography';
 import Footer from '../src/components/Footer';
 import Home from './components/pages/Home';
+import About from './components/pages/About';
 import Products from './components/products/Products';
+import Resources from './components/pages/Resources';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +32,8 @@ export default function App() {
           <Route path="/" exact component={Home} />
           <Route path="/composers" exact component={ComposerChoices} />
           <Route path="/store" component={Store} />
+          <Route path="/about" component={About} />
+          <Route path="/resources" component={Resources} />
           <Route path="/shostakovich" component={shostaBiography} />
         </Switch>
         <Footer />

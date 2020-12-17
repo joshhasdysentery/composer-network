@@ -59,9 +59,7 @@ export default function Header() {
             </h1>
           </Link>
           <IconButton>
-            <Link to="/store">
-              <StoreIcon className={classes.icon} />
-            </Link>
+            <StoreIcon className={classes.icon} />
           </IconButton>
         </Toolbar>
       </AppBar>
