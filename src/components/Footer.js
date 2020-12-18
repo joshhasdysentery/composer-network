@@ -8,8 +8,8 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Subscribe to our newsletter for the latest deals on our store and
-          concerts to look out for
+          Subscribe to our newsletter for the latest deals on our store and new
+          content alerts
         </p>
         <p className="footer-subscription-text">
           Feel free to unsubscribe at anytime.
@@ -47,7 +47,6 @@ function Footer() {
             <h2>Videos</h2>
             <Link to="/">Submit Video</Link>
             <Link to="/">Ambassadors</Link>
-            <Link to="/">Agency</Link>
             <Link to="/">Influencer</Link>
           </div>
           <div class="footer-link-items">

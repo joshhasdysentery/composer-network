@@ -40,7 +40,7 @@ export default function ImageCard({ composer, checked }) {
         <CardMedia
           className={classes.media}
           image={composer.imageUrl}
-          title="Contemplative Reptile"
+          title="Dmitri Shostakovich"
         />
         <CardContent>
           <Typography

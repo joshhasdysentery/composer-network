@@ -7,8 +7,9 @@ const composers = [
   },
   {
     title: 'Coming Soon',
-    description: '',
-    //imageUrl: process.env.PUBLIC_URL + '/assets/island2.jpg',
+    description:
+      'New composers will be added sometime in the future. Stay Tuned!',
+    imageUrl: process.env.PUBLIC_URL + '/assets/unknown.jpg',
     time: 1500,
   },
 ];

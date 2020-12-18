@@ -20,7 +20,7 @@ class Biography extends Component {
         <Section
           title="Conflicts with Stalin"
           subtitle={
-            "Starting from 1928, Joseph Stalin created his Five-Year Plan, a plan that placed an iron grip on Soviet culture. In 1932, avant-garde and jazz music were officially outlawed. One of the first conflicts with Stalin involved his play titled Lady Macbeth of the Mtensk District in 1936. Stalin approved a newspaper the next day completely condemning the performance, criticizing its non-Soviet like sounds. Shostakovich's second denunciation came during the Cold War. Due to the circumstances, Soviet officials imposed further ideological control. At a certain conference in 1948, Shostakovich and many other leaders in Soviet music were disgraced. Shostakovich lost both his teaching jobs at the Moscow and Leningrad conservatories."
+            "Starting from 1928, Joseph Stalin created his Five-Year Plan, a plan that placed an iron grip on Soviet culture. In 1932, avant-garde and jazz music were officially outlawed. One of the first conflicts with Stalin involved his play titled Lady Macbeth of the Mtensk District in 1936. Stalin approved a newspaper the next day completely condemning the performance, criticizing its non-Soviet like sounds. Shostakovich's second denunciation came during the Cold War. Due to the circumstances, Soviet officials imposed further ideological control. At a certain conference in 1948, Shostakovich and many other leaders in Soviet music were disgraced. Shostakovich lost both his teaching jobs at the Moscow and Leningrad conservatories. All throughout his life, he would see friends and family be taken away to work camps or killed simply because they deviated from the Soviet party's ideals"
           }
           dark={true}
           id="section2"
@@ -50,7 +50,7 @@ class Biography extends Component {
         <Section
           title="How can you take influence from Shostakovich?"
           subtitle={
-            "Shostakovich was heavily influenced from his surroundings, take for instance Symphony No. 5. Taken at face value, the piece is a return to Soviet standards, however it displays Shostakovich's feelings of anger and dread towards the central government. Perhaps you can take the feelings that your surroundings evoke and implement them in your music. In addition, Shostakovich's music is characterized by sharp contrasts, grotesque elements and ambivalent tonality"
+            "Shostakovich was heavily influenced from his surroundings, take for instance Symphony No. 5. Taken at face value, the piece is a return to Soviet standards, however it displays Shostakovich's feelings of anger and dread towards the central government. Perhaps you can take the feelings that your surroundings evoke and implement them in your music. In addition, Shostakovich's music is characterized by sharp contrasts, grotesque elements and ambivalent tonality. I'm not saying to directly copy his style, but take a listen to how these elements add to the overall experience of the piece."
           }
           dark={true}
           id="section5"
@@ -58,7 +58,7 @@ class Biography extends Component {
         <Section
           title="Analysis of his Ninth Symphony: A Mockery of Stalin"
           subtitle={
-            "One of Dmitri's most sarcastic piece's is suprisingly his ninth Symphony, a piece typically associated with loud and epic experiences, take Beethoven's Ninth for example. If you take a listen, you can notice that the first movement especially, is riddled with jokes and things only composers would get, all in order to mock Stalin. To provide some context, Stalin commissioned Shostakovich to write his highly-anticipated Ninth Symphony for the Victory Parade after WWII. Shostakovich, who was fed up with Stalin's ruthless demands, decided to go along with it, but not in the way Stalin anticipated. In the first movement, titled 'Allegro', Shostakovich jokes around with a trombone line that sounds like 'da daaaaaaa'. You might not understand what I'm talking about, so I recommend you listen to a bit of the symphony."
+            "One of Dmitri's most sarcastic piece's is suprisingly his ninth Symphony, a piece typically associated with loud and epic experiences, take Beethoven's Ninth for example. If you take a listen, you can notice that the first movement especially, is riddled with jokes and things only composers would get, all in order to mock Stalin. To provide some context, Stalin commissioned Shostakovich to write his highly-anticipated Ninth Symphony for the Victory Parade after WWII. Shostakovich, who was fed up with Stalin's ruthless demands, decided to go along with it, but not in the way Stalin anticipated. In the first movement, titled 'Allegro', Shostakovich jokes around with a trombone line that sounds like 'da daaaaaaa'. You might not understand what I'm talking about, so I recommend you listen to a bit of the symphony. Essentially, the trombone line acts like a trampoline preparing for an epic climax, but what actually plays is a cartoonish picolo tune. This sort of build-up occurs often in the movement. There's one part where this exact trombone line misses the cue four times before he is right. "
           }
           dark={true}
           id="section6"
