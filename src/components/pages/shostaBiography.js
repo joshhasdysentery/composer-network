@@ -58,7 +58,7 @@ class Biography extends Component {
         <Section
           title="Analysis of his Ninth Symphony: A Mockery of Stalin"
           subtitle={
-            "One of Dmitri's most sarcastic piece's is suprisingly his ninth Symphony, a piece typically associated with loud and epic experiences, take Beethoven's Ninth for example. If you take a listen, you can notice that the first movement especially, is riddled with jokes and things only composers would get, all in order to mock Stalin. To provide some context, Stalin commissioned Shostakovich to write his highly-anticipated Ninth Symphony for the Victory Parade after WWII. Shostakovich, who was fed up with Stalin's ruthless demands, decided to go along with it, but not in the way Stalin anticipated"
+            "One of Dmitri's most sarcastic piece's is suprisingly his ninth Symphony, a piece typically associated with loud and epic experiences, take Beethoven's Ninth for example. If you take a listen, you can notice that the first movement especially, is riddled with jokes and things only composers would get, all in order to mock Stalin. To provide some context, Stalin commissioned Shostakovich to write his highly-anticipated Ninth Symphony for the Victory Parade after WWII. Shostakovich, who was fed up with Stalin's ruthless demands, decided to go along with it, but not in the way Stalin anticipated. In the first movement, titled 'Allegro', Shostakovich jokes around with a trombone line that sounds like 'da daaaaaaa'. You might not understand what I'm talking about, so I recommend you listen to a bit of the symphony."
           }
           dark={true}
           id="section6"

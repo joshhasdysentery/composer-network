@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import StoreIcon from '@material-ui/icons/Store';
+import MusicNoteIcon from '@material-ui/icons/MusicNote';
 import { Link as Scroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
@@ -59,7 +60,7 @@ export default function Header() {
             </h1>
           </Link>
           <IconButton>
-            <StoreIcon className={classes.icon} />
+            <MusicNoteIcon className={classes.icon} />
           </IconButton>
         </Toolbar>
       </AppBar>
