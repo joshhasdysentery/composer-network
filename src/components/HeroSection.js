@@ -19,7 +19,7 @@ function HeroSection() {
             Composers
           </Button>
         </Link>
-        <Link to="/store">
+        <Link to="/store/products">
           <Button
             renderAs="button"
             className="btns"

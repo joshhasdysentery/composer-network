@@ -12,7 +12,7 @@ class Biography extends Component {
         <Section
           title="Origins and Life"
           subtitle={
-            'Dmitri Shostakovich was born on September 25 1906 and passed away on August 9th 1975. He is remembered as the one the most influenctial composers of the 20th century, having done most if not all of his major works under Communist oppression. He is renowned for his 15 symphonies, chamber works, and concerti. Born the son of an engineer, he was heavily invested into music from a young age. Having joined the St. Petersburg Conservatory in 1919, and the Chopin International Competitiion for Pianists in Warsaw in 1927. From 1937, Shostakovich became a teacher at the Leningrad Conservatory, where he also composed Symphony No. 7 in 1941. In 1943 he relocated to Moscow.'
+            'Dmitri Shostakovich was born on September 25 1906 and passed away on August 9th 1975. He is remembered as the one the most influenctial composers of the 20th century, having done most if not all of his major works under Communist oppression. This is why people nowadays declare him the greatest Soviet composer. He is renowned for his 15 symphonies, chamber works, and concerti. Born the son of an engineer, he was heavily invested into music from a young age. Having joined the St. Petersburg Conservatory in 1919, and the Chopin International Competitiion for Pianists in Warsaw in 1927. From 1937, Shostakovich became a teacher at the Leningrad Conservatory, where he also composed Symphony No. 7 in 1941. In 1943 he relocated to Moscow.'
           }
           dark={true}
           id="section1"
@@ -49,14 +49,16 @@ class Biography extends Component {
         />
         <Section
           title="How can you take influence from Shostakovich?"
-          subtitle={''}
+          subtitle={
+            "Shostakovich was heavily influenced from his surroundings, take for instance Symphony No. 5. Taken at face value, the piece is a return to Soviet standards, however it displays Shostakovich's feelings of anger and dread towards the central government. Perhaps you can take the feelings that your surroundings evoke and implement them in your music. In addition, Shostakovich's music is characterized by sharp contrasts, grotesque elements and ambivalent tonality"
+          }
           dark={true}
           id="section5"
         />
         <Section
-          title="Notable Works"
+          title="Analysis of his Ninth Symphony: A Mockery of Stalin"
           subtitle={
-            "One of Dmitri's most sarcastic piece's is suprisingly his ninth Symphony, a piece typically associated with loud and brave notes. If you take a listen, you can notice that the first movement especially, is riddled with jokes and things only composers would get, all in order to mock Stalin. "
+            "One of Dmitri's most sarcastic piece's is suprisingly his ninth Symphony, a piece typically associated with loud and epic experiences, take Beethoven's Ninth for example. If you take a listen, you can notice that the first movement especially, is riddled with jokes and things only composers would get, all in order to mock Stalin. To provide some context, Stalin commissioned Shostakovich to write his highly-anticipated Ninth Symphony for the Victory Parade after WWII. Shostakovich, who was fed up with Stalin's ruthless demands, decided to go along with it, but not in the way Stalin anticipated"
           }
           dark={true}
           id="section6"
