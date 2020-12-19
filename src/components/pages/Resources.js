@@ -3,12 +3,24 @@ import Section from '../Section';
 
 function Resources() {
   return (
-    <Section
-      title="Resources and Materials"
-      subtitle={'Book: "The Study of Orchestration" by Samuel Adler\n'}
-      dark={true}
-      id="aboutsection"
-    />
+    <div className="Resources">
+      <Section
+        title="Youtube"
+        subtitle={
+          'Youtube Channels: Adam Neely, 12tone, Rick Beato, David Bruce Composer'
+        }
+        dark={true}
+        id="aboutsection"
+      />
+      <Section
+        title="Books"
+        subtitle={
+          'Principles of Orchestration by Rimsky-Korsakov, The Study of Orchestration by Samuel Adler, Music Composition for Dummies'
+        }
+        dark={true}
+        id=""
+      />
+    </div>
   );
 }
 
