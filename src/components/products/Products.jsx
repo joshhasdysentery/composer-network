@@ -3,7 +3,6 @@ import { Grid } from '@material-ui/core';
 
 import Product from '../product/Product';
 import useStyles from './styles';
-import StoreNavbar from '../Navbar/StoreNavbar';
 
 const Products = ({ products, onAddToCart }) => {
   const classes = useStyles();

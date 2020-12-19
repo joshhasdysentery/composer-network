@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { commerce } from '../../lib/commerce';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 

@@ -4,7 +4,6 @@ import ImageCard from '../ImageCard';
 import composers from '../../static/composers';
 import useWindowPosition from '../../hook/useWindowPosition';
 import { Link } from 'react-router-dom';
-import Header from '../Header';
 
 const useStyles = makeStyles((theme) => ({
   root: {
